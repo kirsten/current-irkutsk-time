@@ -27,8 +27,9 @@
         var minutes = date.getMinutes();
         var seconds = date.getSeconds();
 
-        if (hour > 12) { hour = hour - 12; }
-        if (seconds < 11) { seconds = "0" + seconds; }
+        if (hour > 12)    { hour = hour - 12; }
+        if (minutes < 10) { minutes = "0" + minutes; }
+        if (seconds < 10) { seconds = "0" + seconds; }
 
         var currentIrkutskTime = hour + ":" + minutes + ":" + seconds;
         return currentIrkutskTime;
